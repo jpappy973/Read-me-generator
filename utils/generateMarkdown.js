@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//function creates first part of badge for license
 function renderLicenseBadge(license) {
   if(license == 'MIT'){
       return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
@@ -19,8 +18,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//function creats link for badge
 function renderLicenseLink(license) {
 
   if(license == 'MIT'){
@@ -40,8 +38,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function puts together badge image and link to created badge
 function renderLicenseSection(license) {
   const Lic = `${renderLicenseBadge(license)}${renderLicenseLink(license)}`;
 
@@ -49,7 +46,7 @@ function renderLicenseSection(license) {
 
 }
 
-//generates Dependencies by making to array and converting back to string
+//function creats unordered list
 const Dependencies = (str)=>{
   let arr = str.split(',');
 
@@ -69,7 +66,8 @@ const Dependencies = (str)=>{
 
 
 
-// TODO: Create a function to generate markdown for README
+// This function takes the user input and turns it to markdown data that'll be passes to 
+//fs to creat readme file
 function generateMarkdown(data) {
   let init = "``` sh\n"+data.init+"\n```"
   const Lic = `${renderLicenseSection(data.Lic)}`
