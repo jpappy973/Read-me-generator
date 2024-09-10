@@ -7,10 +7,9 @@ import fs from 'fs'
 import generateMarkdown from './utils/generateMarkdown.js'
 
 
-// TODO: Create an array of questions for user input
-const questions = [];
 
-// TODO: Create a function to write README file
+
+// This function creates the readme file on your local storage 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName,data,(err)=>{
         if(err){
@@ -19,7 +18,7 @@ function writeToFile(fileName, data) {
     })
 }
 
-// recorde
+// This function ask the user the question needed to make readme file it also pass the date and file name to the function writeToFile
 function init() {
     console.log(colors.green(`
 
