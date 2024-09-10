@@ -2,7 +2,8 @@
 This command-line application generates README files based on user input, streamlining the documentation process.
 ## Description 
 This command-line application, built with Node.js and Inquirer, generates a README file based on user input, allowing developers to focus more on coding and less on documentation.
-
+# Video Demonstration
+[VIDEO]('https://streamable.com/ayp9py')
 ## Getting started
 
 ### Dependencies
